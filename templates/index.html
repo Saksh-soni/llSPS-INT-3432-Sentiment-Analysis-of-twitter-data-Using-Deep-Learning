@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style>
+        .vcenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgrey;
+        }
+
+        .formbhanu {
+            /* background-color: green; */
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container vcenter">
+        <form action="{{ url_for('y_pred')}}" method="post">
+            <input type="text" id="feeback" name="feeback">
+            <input type="submit">
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>{{text}}</div>
+    </div>
+</body>
+
+
+</html>
